@@ -1,0 +1,40 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+    <div class="container-fluid">
+     
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='/movies'>Movies</a>
+          </li></ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="font-size: medium; font-family: 'Courier New', Courier, monospace; color: white;">
+              <a class="nav-link" href='/home'>Movies Online</a>
+            </li></ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item" >
+              <a class="nav-link" href='/contactus'>ContactUs</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href='/cart'>MovieEntry</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='/login'>Logout</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div style="text-align:center; width: 700px;">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      [yaxis]="chartOptions.yaxis"
+      [title]="chartOptions.title"
+    ></apx-chart>
+  </div>
+</header>
